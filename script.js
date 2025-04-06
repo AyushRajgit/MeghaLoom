@@ -18,7 +18,7 @@ searchBtn.addEventListener("click",async function() {
 });
 
 async function fetchWeatherData(location) {
-    const Url = `http://api.weatherapi.com/v1/current.json?key=053a62b02bb440dd92a165302250604&q=${location}&aqi=yes`;
+    const Url = `https://api.weatherapi.com/v1/current.json?key=053a62b02bb440dd92a165302250604&q=${location}&aqi=yes`;
     const DataResponse = await fetch(Url);
 
     if(DataResponse.status == 400) {
